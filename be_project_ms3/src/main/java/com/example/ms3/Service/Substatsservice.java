@@ -72,7 +72,6 @@ public class Substatsservice {
 
 	public StatisticsData setmaxstatisticdata(StatisticInfo stsinfo2, StatisticsData statisticsdata)
 	{
-	// set max time diff
 		logger.info("Entering setmaxstatisticdata() "+stsinfo2+" "+statisticsdata);
 		
 		float max_diffintime = ChronoUnit.MILLIS.between(stsinfo2.getEntrydatetime(),stsinfo2.getExitdatetime());
